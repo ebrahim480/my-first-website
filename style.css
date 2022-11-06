@@ -1,101 +1,209 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-}
-.container{
-    background: #000;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .container {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
     position: relative;
-}
-header{
+    transition: background-color 0.5s;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 56px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: lowercase;
+    margin-bottom: 24px;
+  }
+  
+  .description {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    margin-bottom: 48px;
+  }
+  
+  .cta-container {
+    display: flex;
+  }
+  
+  .cta {
+    text-decoration: none;
+    padding: 16px 36px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    display: block;
+    max-width: fit-content;
+    border-radius: 50px;
+    transition: all 0.2s;
+    text-transform: capitalize;
+  }
+  
+  .cta-1 {
+    color: #fff;
+    border: 1px solid white;
+  }
+  
+  .cta-2 {
+    background-color: #fff;
+    color: #000;
+    margin-right: 24px;
+  }
+  
+  .cta-1:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .cta-2:hover {
+    background-color: rgb(230, 230, 230);
+  }
+  
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    max-width: 80%;
     margin: auto;
     padding: 20px 0;
-
-}
-.logo{
+  }
+  .logo {
     width: 40px;
-}
-ul li {
+  }
+  ul li {
     display: inline-block;
     list-style: none;
-}
-ul li a{
+  }
+  ul li a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
-}
-.content{
+  }
+  
+  .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    max-width: 1170px;
     margin: auto;
-}
-.content .text{
+    padding: 36px 15px;
+  }
+  
+  .text {
     width: 40%;
     color: #fff;
-}
-.content .text .h1{
+  }
+  .text .h1 {
     font-size: 40px;
     text-transform: uppercase;
-}
-.content .text .p{
-font-size: 18px;
-margin: 20px 0;
-}
-.content .text .a{
+  }
+  .text .p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  button {
+    background-color: rgb(225, 250, 3);
+    cursor: pointer;
+    font-family: sans-serif;
+  }
+  .text .a {
     text-decoration: none;
     background: #fff;
     color: #000;
     padding: 8px 25px;
     border-radius: 20px;
-}
-.content .image{
-    width: 30%;
-    
-}
-.content.image.img{
+  }
+  
+  .content.image.img {
     width: 180px;
-}
-.icons{
+  }
+  .icons {
     position: absolute;
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-}
-.icons img{
+  }
+  .icons img {
     width: 40px;
     transition: 0.5s;
     cursor: pointer;
-}
-.icons img:hover{
-    transform: scale(1.6);
+  }
+  .icons img:hover {
+    transform: scale(1.5);
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .content {
+      max-width: 1000px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content {
+      max-width: 700px;
+    }
+  
+    .text {
+      width: 100%;
+    }
+  
+    .cta-container {
+      justify-content: center;
+    }
+  
+    .image {
+      margin-top: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content {
+      max-width: 100%;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .logo {
+      width: auto;
+    }
+  
+    header {
+      justify-content: center;
+    }
+  
+    .cta-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .cta-2 {
+      margin-right: 0;
+    }
+  }
 
-}
-h1{
-    font-size: 40px;
-    color: aqua;
-    padding: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-h1:hover{
-    color: brown;
-    font-size: 30px;
-    text-decoration: coral;
-    background-color: darkblue;
-}
-p{
-    font-size: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border-spacing: 2;
- 
-}
-
-
+  

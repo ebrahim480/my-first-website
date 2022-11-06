@@ -1,43 +1,75 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Ibrahim Programing</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <a href="#"><img src="file:///C:/Users/Ahmad/Desktop/logo.png"></a>
-            <ul>
-                <li><a href="https://www.google.com/search?q=iphone+14&oq=iph&aqs=chrome.2.69i57j69i59j0i271l2.4386j0j15&sourceid=chrome&ie=UTF-8">Home</a></li>
-                <li><a href="#">products</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contect</a></li>
-            </ul>
-        </header>
-        <div class="content">
-            <div class="text">
-                <h1>Iphone 14 pro max</h1>
-                <p> Ducimus, omnis cumque. Ut aspernatur provident,
-                     excepturi dolor cum quae, assumenda, iure 
-                     reprehenderit quibusdam nostrum minus ex facilis
-                      nobis minima! Magnam, non?20
-                </p>
-                <a href="https://www.google.com/search?q=iphone&oq=iphone&aqs=chrome..69i57j0i512l9.2915j0j15&sourceid=chrome&ie=UTF-8">All products</a>
-            </div>
-            <div class="image">
-                <img class="img" src="file:///C:/Users/Ahmad/Desktop/0.png">
-            </div>
+      <header>
+        <a class="logo" href="#"><img src="./images/logo.png" /></a>
+        <ul class="menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li><a href="#">products</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contect</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="text">
+          <h1>Iphone 14 pro max</h1>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            explicabo officiis fuga, dolorum quod, velit consequatur vero
+            dignissimos quia ullam possimus natus fugiat doloremque cum sint ut
+            enim aspernatur! Voluptatem.
+          </p>
+          <div class="cta-container">
+            <a class="cta cta-2" href="https://www.youtube.com/"
+              >Check prices</a
+            >
+            <a class="cta cta-1" href="https://www.youtube.com/"
+              >Grab the deal</a
+            >
+          </div>
         </div>
-        <div class="icons">
-            <img onclick="phones(this.src); colors('#000')" src="file:///C:/Users/Ahmad/Desktop/0.png">
-            <img onclick="phones(this.src); colors('lightblue')" src="file:///C:/Users/Ahmad/Desktop/1.png">
-            <img onclick="phones(this.src); colors('#1e1e1e')" src="file:///C:/Users/Ahmad/Desktop/2.png">
-            <img onclick="phones(this.src);  colors('#c79b53')" src="file:///C:/Users/Ahmad/Desktop/3.png">
-            <img onclick="phones(this.src);  colors('red')" src="file:///C:/Users/Ahmad/Desktop/4.png">
+        <div class="image">
+          <img class="img" src="./images/1.png" />
         </div>
-    </div> 
-    <script src="main.js"></script> 
-</body>
+      </div>
+      <div class="icons">
+        <img onclick="phones(this.src); colors('#000')" src="./images/0.png" />
+        <img
+          onclick="phones(this.src); colors('linear-gradient(90deg,rgba(2, 0, 36, 1) 0%,rgba(9, 9, 121, 1) 35%,rgba(0, 212, 255, 1) 100%')"
+          src="./images/1.png"
+        />
+        <img
+          onclick="phones(this.src); colors('#1e1e1e')"
+          src="./images/2.png"
+        />
+        <img
+          onclick="phones(this.src);  colors('#c79b53')"
+          src="./images/3.png"
+        />
+        <img
+          onclick="phones(this.src);  colors('linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,60,0.6362920168067228) 50%, rgba(252,176,69,1) 100%))')"
+          src="./images/4.png"
+        />
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
